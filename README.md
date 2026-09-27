@@ -8,4 +8,4 @@ El objetivo es documentar las metodologías de análisis, herramientas utilizada
 
 | Dificultad | Nombre del Lab | Categoría | Fecha | Write-up |
 | :---: | :--- | :---: | :---: | :---: |
-| Easy | **Phishing Analysis** | Security Operations | 27/09/2026 | [Ver Análisis]([./BTLO/blob/main/Phishing-Analysis](https://github.com/gutierrezsebasg/BTLO/blob/main/Phishing-Analysis)) |
+| Easy | **Phishing Analysis** | Security Operations | 27/09/2026 | [Ver Análisis](./Phishing-Analysis/README.md) |
