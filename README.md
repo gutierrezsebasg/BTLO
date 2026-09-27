@@ -1,6 +1,3 @@
-# BTLO
-Blue Team Labs Online, proyectos, desafios y investigaciones
-
 # Blue Team Labs Online (BTLO) - Write-ups
 
 Este repositorio contiene la documentación y resolución de los laboratorios de ciberseguridad defensiva (Blue Team) que he completado en la plataforma **Blue Team Labs Online**.
