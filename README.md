@@ -9,3 +9,4 @@ El objetivo es documentar las metodologías de análisis, herramientas utilizada
 | Dificultad | Nombre del Lab | Categoría | Fecha | Write-up |
 | :---: | :--- | :---: | :---: | :---: |
 | Easy | **Phishing Analysis** | Security Operations | 27/09/2026 | [Ver Análisis](./Phishing-Analysis.md) |
+| Easy | PowerShell Analysis | Security Operations | 30/09/2026 | [Ver Análisis](./PowerShell-Analysis-Keylogger.md) |
