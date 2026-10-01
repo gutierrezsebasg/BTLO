@@ -1,6 +1,6 @@
 # PowerShell Analysis - Keylogger
 
-[Certificación de BTLO](/BTLO_Caso_2.jpeg)
+![Insignia de BTLO Caso 2](/BTLO_Caso_2.jpeg)
 
 ## Introducción
 
