@@ -1,6 +1,6 @@
 # Phishing Analysis - Blue Team Labs Online Write-up
 
-![Insignia de BTLO](/img/BTLO_Caso_1.jpeg)
+![Insignia de BTLO](./img/BTLO_Caso_1.jpeg)
 
 ## Introducción
 Este es mi primer desafío resuelto en la plataforma Blue Team Labs Online (BTLO). El objetivo del laboratorio consistió en realizar un análisis técnico sobre un caso de sospecha de phishing, identificando los metadatos del correo, los enlaces maliciosos y la infraestructura involucrada.
