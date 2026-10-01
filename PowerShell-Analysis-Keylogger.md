@@ -1,6 +1,6 @@
 # PowerShell Analysis - Keylogger
 
-![Insignia de BTLO Caso 2](/BTLO_Caso_2.jpeg)
+![ ](./img/BTLO_Caso_2.jpeg)
 
 ## Introducción
 
