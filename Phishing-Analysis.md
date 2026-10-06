@@ -1,31 +1,30 @@
-# Phishing Analysis - Blue Team Labs Online Write-up
+# Phishing Analysis - Blue Team Labs Online
 
-![ ](./img/BTLO_Caso_1.jpeg)
+![](./img/BTLO_Caso_1.jpeg)
 
 ## Introducción
-Este es mi primer desafío resuelto en la plataforma Blue Team Labs Online (BTLO). El objetivo del laboratorio consistió en realizar un análisis técnico sobre un caso de sospecha de phishing, identificando los metadatos del correo, los enlaces maliciosos y la infraestructura involucrada.
+Mi primer lab en BTLO. Me tocó revisar un correo de rebote que venía de un formulario de contacto abusado para hacer spam.
 
-Herramientas Utilizadas
+## Herramientas que usé
+- Mousepad para abrir el .eml
+- URLScan.io / URL2PNG para ver la URL sin entrar
 
-    Mousepad: Editor de texto ligero para inspeccionar de forma segura las cabeceras y el cuerpo del archivo de correo .eml.
-    URLScan.io: Sandbox web y plataforma de analisis para inspeccionar URLs sospechosas de manera aislada sin exponer el entorno de trabajo.
+## Qué hice
 
-Paso a Paso del Analisis
+**1. Revisé el correo (.eml)**
+Abrí el archivo y busqué la cabecera `X-Originating-IP` para sacar la IP real del que mandó el spam. Después busqué `http` y encontré el link que venía dentro del formulario.
 
-1.  Inspeccion del Correo (.eml)
-    Se procedio a abrir el archivo de correo adjunto utilizando el editor de texto Mousepad. Mediante el analisis directo de los encabezados y la funcion de busqueda (Ctrl + F), se ubicaron los metadatos clave:
-    --> Identificacion de la direccion IP de origen y la fecha de envio del mensaje.
-    --> Extraccion del nombre del archivo adjunto sospechoso (Website contact form submission.eml).
-    --> Busqueda de la cadena http para extraer el enlace redirigido dentro del correo.
+**2. Revisé el link**
+Era un link de Blogspot. Lo metí en URL2PNG y salía el mensaje `Blog has been removed`, o sea que Google ya lo había dado de baja.
 
-2.  Analisis del Enlace Sospechoso
-    Una vez extraida la URL maliciosa que apuntaba a un subdominio de Blogspot, se utilizo URLScan.io para investigar el sitio de forma segura:
-    --> Se verifico que el servicio de alojamiento correspondia a Blogspot.
-    --> Se inspecciono la captura de pantalla (screenshot) y la seccion Page Title del reporte para confirmar el estado de la pagina.
-    --> Se corroboro que el sitio ya figuraba fuera de linea con el mensaje de estado Blog has been removed / Blog not found.
+## IoCs que encontré
+- IP origen: 103.9.171.10
+- Dominio / URL: hxxps://35000usdperwwekpodf.blogspot[.]sg
+- Hosting: Blogspot / Blogger
+- Archivo adjunto: Website contact form submission.eml
 
-Conclusion y Aprendizajes
+## Veredicto
+Phishing / Spam. Es un caso de backscatter, usan un formulario para que el rebote le llegue a otro.
 
-Este laboratorio me permitio aplicar un flujo de trabajo analitico eficiente utilizando herramientas de entorno grafico (GUI) y plataformas en la nube. Aprendi la importancia de revisar el codigo fuente de un correo para encontrar Indicadores de Compromiso (IoC) y como utilizar plataformas de aislamiento para analizar enlaces peligrosos sin poner en riesgo la red.
-
-Este write-up forma parte de mi portafolio continuo de aprendizaje en ciberseguridad defensiva (Blue Team).
+## Qué aprendí
+Aprendí a buscar la IP en Received y a no fiarme de la extensión, hay que revisar el contenido real y ser mas precavido.
