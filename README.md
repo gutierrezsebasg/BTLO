@@ -2,7 +2,7 @@
 
 Este repositorio contiene la documentación y resolución de los laboratorios de ciberseguridad defensiva (Blue Team) que he completado en la plataforma **Blue Team Labs Online**.
 
-El objetivo es documentar las metodologías de análisis, herramientas utilizadas e Indicadores de Compromiso (IoC) identificados en escenarios de investigación reales.
+Soy Sebastián, y estoy armando mi portafolio para ser analista SOC L1. Aquí documento paso a paso cada laboratorio de BTLO que voy completando.
 
 ## Progreso de Laboratorios
 
